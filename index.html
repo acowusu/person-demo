@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- HTML Meta Tags -->
+   
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
+    />
+ 
+
+    <!--     Basic Three.js -->
+    <script src="https://unpkg.com/three@0.133.0/build/three.js"></script>
+    <!--     GLTF Loader for Three.js --> 
+    <script src="https://unpkg.com/three@0.133.0/examples/js/loaders/GLTFLoader.js"></script>
+    <!--     Orbit Controls for Three.js -->
+    <script src="https://unpkg.com/three@0.133.0/examples/js/controls/OrbitControls.js"></script>
+    <!--     VRM Loader for Three.js -->
+    <script src="https://unpkg.com/@pixiv/three-vrm@0.6.7/lib/three-vrm.js"></script>
+    <!--     Mediapipe or Tensorflow.js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/holistic@0.5.1635989137/holistic.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--     Mediapipe Drawing Tools -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--     Mediapipe Camera Tools -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
+
+    <!--     Kalidokit Kinematic Solver --> 
+    <script src="https://cdn.jsdelivr.net/npm/kalidokit@1.1/dist/kalidokit.umd.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="preview">
+      <video style="display:none"  class="input_video" width="1280px" height="720px"  autoplay muted playsinline></video>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
+
